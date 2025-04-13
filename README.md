@@ -1,8 +1,8 @@
-# React Spin 3D Carousel 🎠
+# React Spin Carousel 3D 🎠
 
 ![Carousel Demo](https:example.com/demo.gif) _Replace with your actual demo GIF_
 
-A highly customizable 3D spinning carousel component for React with smooth animations and multiple display modes. Perfect for showcasing portfolios, products, or image galleries.
+The **React Spin Carousel 3D** is a highly customizable 3D carousel component for React. It allows you to display a collection of items in a visually appealing 3D carousel with smooth transitions and interactive controls. The component supports auto-play, custom radio buttons, smooth animations and multiple display modes("card", "image"). Perfect for showcasing portfolios, products, or image galleries and many more :).
 
 ## 📦 Installation
 
@@ -61,6 +61,43 @@ const DATA: string[] = [
   showRadioButtons={true}
   displayMode="image"
 />
+```
+
+#### Entire React Component in Typescript
+
+```tsx
+import ReactSpinCarousel3D from "./ReactSpinCarousel3D/New/ReactSpinCarousel3D";
+
+// import imagePlaceHolder from "../assets/images/placeholder-image.webp";
+
+const DATA: string[] = [
+  "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/photo-1493136289900-28660d718589.avif",
+  "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/photo-1552663651-2e4250e6c7c8.avif",
+  "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/photo-1656019674844-3040aba0350b.avif",
+  "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/photo-1661695423331-817b8aadd1a0.avif",
+  "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/premium_photo-1668485968590-aff3717c1dbe.avif",
+  "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/premium_photo-1688497831136-0b76172b0f5f.avif",
+  // imagePlaceHolder,
+];
+
+const YourComponent = () => {
+  return (
+    <ReactSpinCarousel3D<string>
+      key="carouse-one"
+      data={DATA}
+      renderItem={(item, index) => <img src={item} alt={`image ${index}`} />}
+      accentColor="blue"
+      backgroundColor="#F5F5F5"
+      isAutoPlay={true}
+      initialActiveIndex={0}
+      autoPlayInterval={5000}
+      showRadioButtons={true}
+      displayMode="image"
+    />
+  );
+};
+
+export default YourComponent;
 ```
 
 ### Card Carousel
