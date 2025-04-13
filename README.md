@@ -27,7 +27,7 @@ yarn add @carousel-ui/react-spin-carousel-3d
 
 ## 🚀 Usage Examples
 
-### Basic Card Carousel
+### Image Gallery
 
 ```tsx
 
@@ -63,7 +63,7 @@ const DATA: string[] = [
 />
 ```
 
-### Image Gallery
+### Card Carousel
 
 ```tsx
 
@@ -150,14 +150,17 @@ const DATA: string[] = [
 
 ## ⚠️ Troubleshooting
 
+**Issue**: Auto-play stops on hover  
+**Solution**: This is intentional (UX best practice). Lets the user observe whats inside the card while hovering!
+
+**Issue**: Radio buttons not properly working when using multiple carousels in same page  
+**Solution**: Use unique key on each carousel
+
 **Issue**: Horizontal scroll appears  
- **Fix**: Ensure parent container has `overflow-x: hidden`
+**Fix**: Ensure parent container has `overflow-x: hidden`
 
 **Issue**: Items overlapping  
- **Fix**: Increase `itemWidth` or reduce number of items
-
-**Issue**: Auto-play stops on hover  
- **Solution**: This is intentional (UX best practice). Lets the user observe whats inside the card.
+**Fix**: Increase `itemWidth` or reduce number of items
 
 ## 📜 License
 
