@@ -107,8 +107,6 @@ export default YourComponent;
 ```tsx
 import ReactSpinCarousel3D from "@carousel-ui/react-spin-carousel-3d";
 
-// import imagePlaceHolder from "path-to-your-local-file";
-
 interface Review {
   _id: number;
   name: string;
@@ -224,8 +222,6 @@ export default YourComponent;
 ```tsx
 import { CSSProperties } from "react";
 import ReactSpinCarousel3D from "@carousel-ui/react-spin-carousel-3d";
-
-// import imagePlaceHolder from "path-to-your-local-file";
 
 interface Review {
   _id: number;
@@ -402,8 +398,6 @@ export default YourComponent;
 import { CSSProperties } from "react";
 import ReactSpinCarousel3D from "@carousel-ui/react-spin-carousel-3d";
 
-// import imagePlaceHolder from "path-to-your-local-file";
-
 interface Review {
   _id: number;
   name: string;
@@ -418,7 +412,6 @@ const data: string[] = [
   "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/photo-1661695423331-817b8aadd1a0.avif",
   "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/premium_photo-1668485968590-aff3717c1dbe.avif",
   "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/premium_photo-1688497831136-0b76172b0f5f.avif",
-  // imagePlaceHolder,
 ];
 
 const DATA: Review[] = [
@@ -656,8 +649,6 @@ export default YourComponent;
 ### Card Carousel (displayMode: "card")
 
 ```jsx
-// import imagePlaceHolder from "path-to-your-local-file";
-
 import ReactSpinCarousel3D from "@carousel-ui/react-spin-carousel-3d";
 
 const DATA = [
@@ -771,8 +762,6 @@ export default YourComponent;
 ### Custom Navigation
 
 ```jsx
-// import imagePlaceHolder from "path-to-your-local-file";
-
 import ReactSpinCarousel3D from "@carousel-ui/react-spin-carousel-3d";
 
 const DATA = [
@@ -933,8 +922,6 @@ export default YourComponent;
 ### Using Multiple Carousels together in a single page (Javascript)
 
 ```jsx
-// import imagePlaceHolder from "path-to-your-local-file";
-
 import ReactSpinCarousel3D from "@carousel-ui/react-spin-carousel-3d";
 
 const data = [
@@ -944,7 +931,6 @@ const data = [
   "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/photo-1661695423331-817b8aadd1a0.avif",
   "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/premium_photo-1668485968590-aff3717c1dbe.avif",
   "https://raw.githubusercontent.com/SpurgeonPrakash/images-for-carousel-ui/main/premium_photo-1688497831136-0b76172b0f5f.avif",
-  // imagePlaceHolder,
 ];
 
 const DATA = [
